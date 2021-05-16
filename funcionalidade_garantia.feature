@@ -4,6 +4,7 @@ Funcionalidade: Garantia
      Como usuário do site submarino
      Quero adicionar garantia ao produto adquirido 
      Para que possa ter uma segurança maior
+
         Contexto: logado no site e produto com garantia selecionado
             Dado que esteja no site submarino
               E esteja logado
