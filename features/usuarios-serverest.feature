@@ -9,7 +9,7 @@ Funcionalidade: Usuarios
             Dado que esteja no site https://serverest.dev/
 #GET
         Cenário: Listar usuarios cadastrados
-             Quando acessar a rota /carrinhos
+             Quando acessar a rota /usuarios
              Então Então deverá retornar status 200 com a lista de usuarios
 
         Esquema do Cenário: Buscar usuarios por id
