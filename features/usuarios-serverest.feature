@@ -14,14 +14,14 @@ Funcionalidade: Usuarios
 
         Esquema do Cenário: Buscar usuarios por id
              Quando acessar a rota /usuarios/{_id}
-              E o carrinho for "<tipo>"
+              E o usuario for "<tipo>"
              Então deverá retornar "<status>" e "<mensagem>"
         Exemplos:
                   | tipo     | status | mensagem               |
                   | válido   | 200    | usuario encontrado     |
                   | inválido | 400    | usuario não encontrado |
 #POST
-        Esquema do Cenário: Cadastrar carrinhos
+        Esquema do Cenário: Cadastrar usuario
              Quando acessar a rota /usuarios
               E preencher os campos
              Então deverá retornar "<status>" e "<mensagem>"
@@ -42,7 +42,7 @@ Funcionalidade: Usuarios
         Esquema do Cenário: Editar usuario
              Quando acessar a rota /usuarios/{_id}
               E editar usuario
-             Então deverá retornar "<status>" e "<mensagem>" e os produtos seram direcionados para o estoque
+             Então deverá retornar "<status>" e "<mensagem>"
         Exemplos:
                   | status | mensagem             |
                   | 200    | alterado com sucesso |

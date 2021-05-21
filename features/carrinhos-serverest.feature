@@ -10,7 +10,7 @@ Funcionalidade: Carrinhos
 #GET
         Cenário: Listar carrinhos cadastrados
              Quando acessar a rota /carrinhos
-             Então Então deverá retornar status 200 com a lista de produtos
+             Então Então deverá retornar status 200 com a lista de carrinhos
 
         Esquema do Cenário: Buscar carrinho por id
              Quando acessar a rota /carrinhos/{_id}
