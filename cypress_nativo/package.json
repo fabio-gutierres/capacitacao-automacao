@@ -4,12 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^7.4.0"
+    "cypress": "^7.4.0",
+    "cypress-cucumber-preprocessor": "^4.1.1",
+    "faker": "^5.5.3",
+    "fs-extra": "^10.0.0",
+    "jsonschema": "^1.4.0",
+    "rimraf": "^3.0.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinition": false,
+    "step_definitions": "cypress/integration/step_definitions/",
+    "cucumberJson": {
+      "generate": false
+    }
   }
 }

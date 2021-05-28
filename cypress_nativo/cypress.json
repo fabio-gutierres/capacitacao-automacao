@@ -1,1 +1,8 @@
-{}
+{
+    "$schema": "https://on.cypress.io/cypress.schema.json",
+    "video": false,
+    "chromeWebSecurity": false,
+    "testFiles": "**/*.{feature,features}",
+    "numTestsKeptInMemory": 1
+
+}
