@@ -1,25 +1,32 @@
 /// <reference types="cypress" />
 import { Given, When, Then, And, But } from 'cypress-cucumber-preprocessor/steps'
+import {AutomationLogin} from '../../pages/login.page'
 
 
 
-Given(`que esteja no site automation practice`, () => {
-	cy.visit('/')
-    
+Given(`que esteja no site automation practice`, (site) => {
+  AutomationLogin.visitar_site(site)
 });
 
 
-When(`clicar em Sign in`, () => {
-	cy.get('.login').click()
+When(`clicar em Sign in`, (signin) => {
+  AutomationLogin.clicar_signin(signin)
 });
 
 
-Then(`realizar login`, () => {
-    cy.get('#email').type('teste@1234.com')
-    .should('have.value', 'teste@1234.com'); //validaçao da escrita
-    cy.get('#passwd').type('32173433')
-    .should('have.value', '32173433');
-    cy.get('#SubmitLogin > span').click(); 
+
+When(`logar com email {string} e senha {string}`, (email, senha) => {
+  AutomationLogin.realizar_login(email, senha)
 });
 
+
+
+Then(`devera ser redirecionado a pagina {string}`, (pagina) => {
+  AutomationLogin.direcionamento_page(pagina)
+});
+
+
+Then(`devera ser exibida {string}`, (mensagem) => {
+  AutomationLogin.exibir_mensagem(mensagem)  
+});
 
