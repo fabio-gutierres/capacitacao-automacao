@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import { Given, When, Then, And, But } from 'cypress-cucumber-preprocessor/steps'
 import {AutomationLogin} from '../../pages/login.page'
-
+import {StepHelper} from './common/helper.step'
 
 
 Given(`que esteja no site automation practice`, (site) => {

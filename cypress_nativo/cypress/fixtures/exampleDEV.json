@@ -1,0 +1,17 @@
+{
+    "ComplexObject":{
+        "arrayOfObjects":[
+            {
+                "stringOne":"First string on first object of the array",
+                "stringTwo":"Second string on first object of the array",
+                "nullValue": null
+            },
+            {
+                "integer":7,
+                "pi":3.141592,
+                "phi":1.618033
+            }
+        ]
+    },
+    "SimpleKeyValue":"That is the value, and it is a string!"
+}
